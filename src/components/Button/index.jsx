@@ -6,7 +6,6 @@ export const Button = (Props) => {
   const {
     text,
     onAction = () => {},
-    bold = false,
     inverted = false,
     disabled = false,
   } = Props;
