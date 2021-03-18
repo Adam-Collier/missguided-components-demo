@@ -15,7 +15,6 @@ export const AccordionItem = (Props) => {
 
   // tu sam stao https://www.missguided.co.uk/help
 
-  console.log(Plus);
   return (
     <div className={`accordion-item`}>
       <h4 onClick={onOpen}>
