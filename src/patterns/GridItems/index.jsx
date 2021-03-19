@@ -8,6 +8,7 @@ export const GridItems = ({
   minWidth = 300,
   imageHeight,
   imageWidth,
+  imageSizesAtt,
 }) => {
   let styles = {
     gridGap,
@@ -16,14 +17,15 @@ export const GridItems = ({
 
   return (
     <div className="grid-items" style={styles}>
-      {items.map((item) => {
+      {items.map((item, index) => {
         let itemWithDimensions = {
           ...item,
           height: imageHeight,
           width: imageWidth,
+          sizes: imageSizesAtt,
         };
 
-        return <GridItem {...itemWithDimensions} />;
+        return <GridItem key={index} {...itemWithDimensions} />;
       })}
     </div>
   );
